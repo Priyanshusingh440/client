@@ -42,7 +42,7 @@ if( !empty($json_data) )
 
         if ($uname != "" && $password != "")
         {
-            $check='SELECT * FROM client_details WHERE email="'.$uname.'" and password="'.$password.'"';
+            $check='SELECT * FROM user_details WHERE email_id="'.$uname.'" and password="'.$password.'"';
             $result=$this->conn->query($check);
             
             if($result->num_rows==1)
